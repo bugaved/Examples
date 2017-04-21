@@ -22,11 +22,10 @@ public class Parser {
         String s = br.readLine();
         String[] spl = s.split(" ");
         ListNode ln[] = new ListNode[spl.length];
-        for (int k = 0; k<spl.length; k++) {
-            System.out.println(spl.length);
-            System.out.println(spl[k] + "" +spl[k+1]);
+        for (int k = 0; k < spl.length; k++) {
+            ln[k] = new ListNode();
             ln[k].setValue(Integer.parseInt(spl[k]));
-            ln[k].setHashKey(ln[k].getValue()%N);
+            ln[k].setHashKey(ln[k].getValue() % N);
         }
         return ln;
     }

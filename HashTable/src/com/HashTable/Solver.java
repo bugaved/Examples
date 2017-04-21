@@ -1,6 +1,7 @@
 package com.HashTable;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 public class Solver {
     public static void main(String[] args) throws IOException {
@@ -11,6 +12,7 @@ public class Solver {
         ln = sort.Sorting1(ln);
         String x[];
         x = sort.Sorting2(ln);
-        System.out.println(x);
+
+        System.out.println(Arrays.toString(x));
     }
 }
