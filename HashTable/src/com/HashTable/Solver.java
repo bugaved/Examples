@@ -13,6 +13,8 @@ public class Solver {
         String x[];
         x = sort.Sorting2(ln);
 
-        System.out.println(Arrays.toString(x));
+        for (String s: x) {
+            System.out.println(s);
+        }
+        }
     }
-}

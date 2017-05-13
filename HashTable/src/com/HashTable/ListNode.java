@@ -34,7 +34,7 @@ public class ListNode implements Comparable<ListNode> {
 
     @Override
     public int compareTo(ListNode o) {
-        return o.getHashKey() - this.getHashKey();
+        return this.getHashKey() - o.getHashKey();
     }
 
 
