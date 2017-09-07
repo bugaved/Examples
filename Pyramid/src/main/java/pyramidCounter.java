@@ -16,7 +16,7 @@ public class pyramidCounter {
             step++;
 
         }
-        if (canBuild = true) {
+        if (canBuild == true) {
             return floors;
         } else {
             throw new CannotBuildPyramideException("cannot build pyramide");

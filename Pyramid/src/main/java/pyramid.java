@@ -15,18 +15,18 @@ public class pyramid {
         int[] values = new int[spl.length];
         for (int i = 0; i < spl.length; i++) {
             values[i] = parseInt(spl[i]);
-            System.out.println(values[i]);
         }
         Sorter sort = new Sorter();
         values = sort.Sorting(values);
-        for (int i = 0; i < spl.length; i++) {
-            System.out.println(values[i]);
-        }
-        pyramidCounter pc = new pyramidCounter();
-        int floors = pc.countFloors(spl.length);
 
+
+        pyramidCounter pc = new pyramidCounter();
+        try {
+        int floors = pc.countFloors(spl.length);
         PyramidBuilder pb = new PyramidBuilder();
         pb.buildPyramid(values, floors);
-
+        } catch (CannotBuildPyramideException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 }

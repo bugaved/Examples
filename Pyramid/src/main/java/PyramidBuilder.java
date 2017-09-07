@@ -3,8 +3,9 @@ public class PyramidBuilder {
     int width;
     int height;
 
-    public int[][] buildPyramid(int[] x, int floors) {
+    public int[][] buildPyramid(int[] x, int floors )throws CannotBuildPyramideException {
         height = floors;
+        System.out.println(floors);
         width = floors * 2 - 1;
         int k = 0;
         int counter = 2;
